@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toast and API Request Example</title>
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    /* Style for sections and headings */
+    section {
+      text-align: center;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+    h2 {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+    }
+
+    /* Centered text in buttons */
+    button {
+      display: block;
+      margin: 10px auto;
+    }
+
+    /* Increase space between sections */
+    section + section {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 'Like' button -->
+  <section>
+    <h2>Like Button</h2>
+    <button id="likeBtn">Like</button>
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="mr-auto">Toast Notification</strong>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body">
+        This is a toast notification.
+      </div>
+    </div>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>Table Section</h2>
+    <table id="data-table" class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Country</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table content will be populated here -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Contact Section -->
+  <section>
+    <h2>Contact Information</h2>
+    <div id="contact-info">
+      <p>From: email@emailaddress.co.za</p>
+      <p>Contact: 0458754125</p>
+      <p>Address: 12 Smith Road, John Park.</p>
+    </div>
+    <button id="update-contact-btn">Update Contact Info</button>
+  </section>
+
+  <!-- Accessibility section -->
+  <section>
+    <h2>Accessibility</h2>
+    <label for="text-size-toggle">Increase Text Size</label>
+    <input type="checkbox" id="text-size-toggle">
+    <p>This is a sample paragraph with text that may need to be resized.</p>
+    <p>Another paragraph here.</p>
+    <p>And one more.</p>
+  </section>
+
+  <!-- Include Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- JavaScript code -->
+  <script src="welcome.js"></script>
+  <script src="table.js"></script>
+  <script src="contact.js"></script>
+  <script src="accessibility.js"></script>
+</body>
+</html>
